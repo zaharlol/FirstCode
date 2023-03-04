@@ -37,14 +37,36 @@ class Program
                 Console.WriteLine("У вас есть питиомец? " + back);
                 Console.WriteLine("Размер ноги " + ttt);
 
-                enum Semaphore
-    {
-                    Red = 100,
-                    Yellow = 200,
-                    Green = 300
-    }
+                Console.WriteLine("Твой любимый день?");
+                DayOfWeek day = (DayOfWeek)int.Parse(Console.ReadLine());
+                Console.WriteLine("Your favorite day is {0}", day);
+
+                Console.WriteLine("Как тебя зовут?");
+                var name = Console.ReadLine();
+                Console.WriteLine("Сколько тебе лет?");
+                var age = checked((byte)int.Parse(Console.ReadLine()));
+                Console.WriteLine("Your name is {0} and age is {1} ", name, age);
+                Console.Write("What is your favorite day of week? ");
+                var daym = (DayOfWeek)int.Parse(Console.ReadLine());
+                Console.WriteLine("Your favorite day is {0}", daym);
+
+                Console.WriteLine("Как тебя зовут?");
+                var name2 = Console.ReadLine();
+                Console.WriteLine("Сколько тебе лет?");
+                var age1 = int.Parse(Console.ReadLine());
+                Console.WriteLine("Тебя зовут {0} и твой возраст {1} ", name2, age1);
+                Console.Write("Дата рождения: ");
+                var data1 = Console.ReadLine();
+                Console.WriteLine("Ты родился {0}", data1);
+
             }
+
         }
-       
     }
+}
+enum Semaphore
+{
+    Red = 100,
+    Yellow = 200,
+    Green = 300
 }
