@@ -36,6 +36,13 @@ class Program
                 Console.WriteLine("Мне " + year + " год");
                 Console.WriteLine("У вас есть питиомец? " + back);
                 Console.WriteLine("Размер ноги " + ttt);
+
+                enum Semaphore
+    {
+                    Red = 100,
+                    Yellow = 200,
+                    Green = 300
+    }
             }
         }
        
