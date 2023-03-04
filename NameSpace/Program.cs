@@ -23,6 +23,9 @@ class Program
                 Console.WriteLine('\x23');
                 Console.ReadKey();
 
+                Console.WriteLine(true);
+                Console.WriteLine(false);
+                Console.ReadKey();
 
                 string Name = "Захар";
                 byte year = 21;
