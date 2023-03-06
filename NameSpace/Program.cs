@@ -1,4 +1,6 @@
-﻿using System.Net.Security;
+﻿using System;
+using System.Net.Security;
+using System.Xml.Linq;
 
 class Program
 {
@@ -59,6 +61,7 @@ class Program
                 var data1 = Console.ReadLine();
                 Console.WriteLine("Ты родился {0}", data1);
 
+                
             }
 
         }
