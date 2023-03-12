@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NameSpace", "NameSpace\NameSpace.csproj", "{A72FEF48-03CE-4263-8542-F10B4681C1D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NameSpace", "NameSpace\NameSpace.csproj", "{A72FEF48-03CE-4263-8542-F10B4681C1D6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{AD8D440A-749B-4420-8229-8A9C9F180B02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "URS", "URS\URS.csproj", "{B66F6CE8-B07A-4B0F-A4BF-2F47EDA0C922}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{A72FEF48-03CE-4263-8542-F10B4681C1D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A72FEF48-03CE-4263-8542-F10B4681C1D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A72FEF48-03CE-4263-8542-F10B4681C1D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B66F6CE8-B07A-4B0F-A4BF-2F47EDA0C922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B66F6CE8-B07A-4B0F-A4BF-2F47EDA0C922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B66F6CE8-B07A-4B0F-A4BF-2F47EDA0C922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B66F6CE8-B07A-4B0F-A4BF-2F47EDA0C922}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B66F6CE8-B07A-4B0F-A4BF-2F47EDA0C922} = {AD8D440A-749B-4420-8229-8A9C9F180B02}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D95428B7-A267-4CA9-A11C-BBCF903CB649}
