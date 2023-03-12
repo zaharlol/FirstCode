@@ -65,14 +65,7 @@ class Program
                 var data1 = Console.ReadLine();
                 Console.WriteLine("Ты родился {0}", data1);
 
-                //string a, b;
-                //bool c = a != b;
-
-                //int A, B;
-                //double X, Y;
-                //bool C1 = (A < B) | (X > Y);
-
-               
+            
             }
 
         }
