@@ -57,5 +57,47 @@ class Program
 
             Console.ReadLine();
         }
+
+        Console.BackgroundColor = ConsoleColor.Black;
+        Console.ForegroundColor = ConsoleColor.White;
+        //Использование Switch
+
+        Console.WriteLine("Напиши любимый цвет с маленькой буквы на английском");
+
+        var color1 = Console.ReadLine();
+
+        switch (color1)
+        {
+            case "red":
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.WriteLine("Ваш цвет красный");
+            Console.ReadLine();
+                break;
+
+
+            case "blue":
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.WriteLine("Ваш цвет синий");
+            Console.ReadLine();
+                break;
+
+
+            case "yellow":
+            Console.BackgroundColor = ConsoleColor.Yellow;
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.WriteLine("Ваш цвет жёлтый");
+            Console.ReadLine();
+                break;
+
+            default:
+                Console.BackgroundColor = ConsoleColor.Yellow;
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Множество цветов");
+                Console.ReadLine();
+                break;
+
+        }
     }
 }
