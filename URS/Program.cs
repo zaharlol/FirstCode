@@ -98,5 +98,45 @@ class Program
 
             }
         }
+
+        int t = 0;
+
+        do
+        {
+            
+            switch (Console.ReadLine())
+            {
+                case "red":
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.ForegroundColor = ConsoleColor.Black;
+                    Console.WriteLine("Ваш цвет красный");
+                    break;
+
+
+                case "blue":
+                    Console.BackgroundColor = ConsoleColor.Blue;
+                    Console.ForegroundColor = ConsoleColor.Black;
+                    Console.WriteLine("Ваш цвет синий");
+                    break;
+
+
+                case "yellow":
+                    Console.BackgroundColor = ConsoleColor.Yellow;
+                    Console.ForegroundColor = ConsoleColor.Black;
+                    Console.WriteLine("Ваш цвет жёлтый");
+                    break;
+
+                default:
+                    Console.BackgroundColor = ConsoleColor.Yellow;
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Множество цветов");
+                    break;
+
+
+
+            }
+            t++;
+        }
+        while (t < 3);
     }
 }
