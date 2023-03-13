@@ -28,5 +28,34 @@ class Program
         {
             Console.WriteLine("Условие ложно");
         }
+
+        Console.WriteLine("Напиши любимый цвет с маленькой буквы на английском");
+
+        var color = Console.ReadLine();
+
+        if (color == "red")
+        {
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.WriteLine("Ваш цвет красный");
+            Console.ReadLine();
+        }
+
+        else if (color == "blue")
+        {
+            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.WriteLine("Ваш цвет синий");
+            Console.ReadLine();
+        }
+
+        else
+        {
+            Console.BackgroundColor= ConsoleColor.Yellow;
+            Console.ForegroundColor= ConsoleColor.Black;
+            Console.WriteLine("Ваш цвет жёлтый");
+
+            Console.ReadLine();
+        }
     }
 }
