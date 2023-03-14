@@ -62,5 +62,14 @@ class Program
         {
             Console.Write(item);
         }
+
+        var arr1 = new int[] { 5, 6, 9, 1, 2, 3, 4 };
+        int a = 0;
+        Console.WriteLine(a);
+        for (int t = 0; t < arr1.Length; t++)
+        {
+            a += arr1[t];
+        }
+        Console.WriteLine(a);
     }
 }
