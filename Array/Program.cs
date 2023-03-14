@@ -38,6 +38,29 @@ class Program
                 Console.Write(array[k, x] + " ");
 
             Console.WriteLine();
+            Console.ReadKey();
+        }
+
+        var arr = new int[] { 5, 6, 9, 1, 2, 3, 4 };
+
+        int temp;
+
+        for (int z = 0; z < arr.Length; z++)
+        {
+            for (int j = z + 1; j < arr.Length; j++)
+            {
+                if (arr[z] > arr[j])
+                {
+                    temp = arr[z];
+                    arr[z] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+
+        foreach (var item in arr)
+        {
+            Console.Write(item);
         }
     }
 }
