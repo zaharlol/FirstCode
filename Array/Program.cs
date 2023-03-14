@@ -29,5 +29,15 @@ class Program
 
         Console.WriteLine(" Последняя буква вашего имени: {0}", name[0]);
         Console.ReadKey();
+
+        int[,] array = { { 1, 2, 3 }, { 5, 6, 7 }, { 8, 9, 10 }, { 11, 12, 13} };
+
+        for (int x = 0; x < array.GetUpperBound(1) + 1; x++)
+        {
+            for (int k = 0; k < array.GetUpperBound(0) + 1; k++)
+                Console.Write(array[k, x] + " ");
+
+            Console.WriteLine();
+        }
     }
 }
