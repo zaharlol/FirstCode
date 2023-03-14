@@ -86,5 +86,17 @@ class Program
                 Console.Write(item + " ");
             }
         }
+        Console.WriteLine();
+
+        var arr2 = new int[] { 5, 1, -1, -6, 2, -7, -2, 8 };
+        var v = 0;
+        for (int m = 0; m < arr2.Length; m++)
+        {
+            if (arr2[m] > 0)
+            {
+                v += 1;
+            }
+        }
+        Console.WriteLine(v);
     }
 }
