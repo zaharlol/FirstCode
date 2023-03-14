@@ -12,7 +12,7 @@ class Program
 
         Console.WriteLine("Ваше имя по буквам: ");
 
-        foreach (var q in name) 
+        foreach (var q in name)
         {
             Console.Write(q + " ");
         }
@@ -30,7 +30,7 @@ class Program
         Console.WriteLine(" Последняя буква вашего имени: {0}", name[0]);
         Console.ReadKey();
 
-        int[,] array = { { 1, 2, 3 }, { 5, 6, 7 }, { 8, 9, 10 }, { 11, 12, 13} };
+        int[,] array = { { 1, 2, 3 }, { 5, 6, 7 }, { 8, 9, 10 }, { 11, 12, 13 } };
 
         for (int x = 0; x < array.GetUpperBound(1) + 1; x++)
         {
@@ -71,5 +71,20 @@ class Program
             a += arr1[t];
         }
         Console.WriteLine(a);
+
+
+        int[][] array1 = new int[3][];
+
+        array1[0] = new int[2] { 1, 2 };
+        array1[1] = new int[3] { 1, 2, 3 };
+        array1[2] = new int[5] { 1, 2, 3, 4, 5 };
+
+        foreach (var ar in array1)
+        {
+            foreach (var item in ar)
+            {
+                Console.Write(item + " ");
+            }
+        }
     }
 }
