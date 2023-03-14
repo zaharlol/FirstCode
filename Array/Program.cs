@@ -108,5 +108,26 @@ class Program
                 c++;
         }
         Console.WriteLine(c);
+
+        int[,] arr5 = { { -5, 6, 9, 1, 2, -3 }, { -8, 8, 1, 1, 2, -3 } };
+        int pow;
+        for (int o = 0; o <= arr5.GetUpperBound(0); o++)
+        {
+
+            for (int p = 0; p <= arr5.GetUpperBound(1); p++)
+                for (int d = p + 1; d <= arr5.GetUpperBound(1); d++)
+                    
+                    if (arr5[o, p] > arr5[o, d])
+                    {
+                        pow = arr5[o, d];
+                        arr5[o, d] = arr5[o, p];
+                        arr5[o, p] = pow;
+                    }
+        
+        }
+        foreach (var item in arr5)
+        {
+            Console.Write(item) ;
+        }
     }
 }
