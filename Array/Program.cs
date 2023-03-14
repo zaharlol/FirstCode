@@ -18,6 +18,16 @@ class Program
         }
 
         Console.WriteLine("Последняя буква вашего имени: {0}", name[name.Length - 1]);
+
+        int i = 1;
+        do
+        {
+            Console.Write(name[name.Length - i]);
+            i++;
+        }
+        while (i != name.Length + 1);
+
+        Console.WriteLine(" Последняя буква вашего имени: {0}", name[0]);
         Console.ReadKey();
     }
 }
