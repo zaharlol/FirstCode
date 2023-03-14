@@ -98,5 +98,15 @@ class Program
             }
         }
         Console.WriteLine(v);
+
+        int[,] arr3 = { { -5, 6, 9, 1, 2, -3 }, { -8, 8, 1, 1, 2, -3 } };
+
+        var c = 0;
+        foreach (var ty in arr3)
+        {
+            if (ty > 0)
+                c++;
+        }
+        Console.WriteLine(c);
     }
 }
