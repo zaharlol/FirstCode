@@ -28,5 +28,17 @@ class Program
         age = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Ваше имя: {0}", name);
         Console.WriteLine("Ваш возраст: {0}", age);
+
+        (string Name, string Type, double Age, int NameCount) Pet;
+
+        Console.WriteLine("Как зовут вашего питомца?");
+        Pet.Name = Console.ReadLine();
+        Console.WriteLine("Что за питомец?");
+        Pet.Type = Console.ReadLine();
+        Console.WriteLine("Какой возраст?");
+        Pet.Age = Convert.ToDouble(Console.ReadLine());
+        Pet.NameCount = Pet.Name.Length;
+        Console.WriteLine("Вашего питомца зовут {0}, это - {1}, его возраст {2}", Pet.Name, Pet.Type, Pet.Age);
+        Console.WriteLine("Длина имени: {0}", Pet.NameCount);
     }
 }
